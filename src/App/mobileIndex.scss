@@ -1,0 +1,253 @@
+@media screen and (max-width:1024px) {
+  .navbar{
+    .logo{
+      img{
+        width: 120px;
+      }
+    }
+  }
+  #cssSlider{
+    min-height: 310px;
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .pt-210 {
+    padding-top: 150px;
+  }
+  .mouseIcon , .ScrollTopBtn {
+    width: 100%;
+  }
+}
+@media screen and (max-width:768px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .navbar{
+    flex-direction: column;
+    border-bottom:1px solid #565353;
+    .logo{
+      margin-right: 0;
+      img{
+        width: 160px;
+      }
+    }
+    
+  }
+  .pc{
+    display: none;
+  }
+  .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(-25px,-25px);
+
+    label{
+      transition: 1s;
+    }
+  }
+  .nav-btn > label {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding: 13px;
+    position: relative;
+    .arrowSpan{
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .arrowSpan:before,.arrowSpan:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 14px;
+      width: 12px;
+      height: 1px;
+      z-index: 1;
+      transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1),-webkit-transform-origin 1s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .arrowSpan:before{
+      transform: rotate(40deg) scaleY(1.5);
+      background: #fff;
+      right: 50%;
+      transform-origin: 100% 100%
+    }
+    .arrowSpan:after{
+      transform: rotate(-40deg) scaleY(1.5);
+      background: #fff;
+      left: 50%;
+      transform-origin: 0% 100%
+    }
+
+    
+  }
+
+  nav ul li{
+    margin: 0;
+  }
+  #menuList{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: hidden;
+    top: 76px;
+    left: 0px;
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    padding-top: 52px;
+    :first-child {
+      transition-delay: 0.35s; 
+    }
+    :nth-child(2) {
+      transition-delay: 0.50s; 
+    }
+    :nth-child(3) {
+      transition-delay: 0.65s; 
+    }
+    :nth-child(4) {
+      transition-delay: 0.80s; 
+    }
+    :nth-child(5) {
+      transition-delay: 0.95s; 
+    }
+    :nth-child(6) {
+      transition-delay: 1.05s; 
+    }
+    li{
+      opacity: 0;
+      transform: translateY(-20px);
+      margin-bottom: 40px;
+      transition: .8s cubic-bezier(0.86, 0, 0.07, 1);
+      a{
+        font-size: 16px;
+        color:white;
+        svg{
+          width: 21px;
+        }
+        
+      }
+    }
+
+  }
+  #menuList   , #menuSub   {
+    
+    flex-direction:column;
+    text-align: center;
+    color:white;
+  }
+
+  #nav-check:not(:checked) ~  #menuList {
+    height: 0;
+    padding-top: 0px;
+    li{
+      opacity: 0;
+      transform: translateY(-20px);
+      a{
+        
+      }
+    }
+  }
+  #nav-check:checked ~  #menuList {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    li{
+      opacity: 1;
+      transform: translateY(0px);
+      a{
+        
+      }
+    }
+  }
+  #arrowLabel img{
+    
+  }
+  #nav-check:checked ~  .nav-btn #arrowLabel .arrowSpan{
+    transform: translateY(-8px); 
+  }
+  #nav-check:checked ~  .nav-btn #arrowLabel .arrowSpan:before{ 
+    transform-origin: 100% 0%;
+    transform: rotate(-40deg) scaleY(1.5);
+  }
+  #nav-check:checked ~  .nav-btn #arrowLabel .arrowSpan:after{ 
+    transform-origin: 0% 0%;
+    transform: rotate(40deg) scaleY(1.5);
+  }
+
+
+
+  .pt-100 {
+    padding-top: 100px;
+  }
+  .pt-150{
+    padding-top: 80px;
+  }
+
+  .pt-210{
+    padding-top: 113px;
+  }
+  .section1{
+    transition: 0.3s;
+    .aboutPr{
+      padding-right: 15px;
+    }
+  }
+  #cssSlider{
+    min-height: 210px;
+  }
+  #VideoPlayer{
+    padding-top: 0px;
+  }
+  #ScrollTopBtn{
+    padding-top: 0;
+  }
+  .appCard h1{
+    font-size: 6vw;
+  }
+  .appCard h3{
+
+  }
+  .goldBtn{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .mouseIcon , .ScrollTopBtn {
+    width: 100%;
+  }
+  .mainTitle{
+    background: rgba(0, 144, 255,0.4);
+    color:white;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 11px;
+    margin-bottom: 20px;
+    h1{
+      color:white;
+      font-size: 20px;
+    }
+    p{
+      font-size: 10px;
+      line-height: 15px;
+      color:#ccc;
+    }
+  }
+  .content{
+    margin-top: 20px;
+  }
+  #footrt .row{
+    margin: 0px 10px;
+  }
+  #footer .copyright{
+    justify-content: center;
+  }
+  .blur { 
+    transition-delay: 0.5s;
+    filter: blur(5px); }
+}

@@ -1,0 +1,19 @@
+串流主機 x 6
+
+Intel i7-8700k
+UMAX 16GB記憶體
+WD BLACK SN750 NVMe SSD 500GB x 2
+6 port Gigabit網路卡
+--------------------------
+操作主機 x 1
+
+Intel i5-8500
+UMAX 128GB記憶體
+Galax Nvidia GTX 1070 Ti 8GB
+Kingston KC2000 NVMe SSD 500GB x 1
+Intel X540-T2 10Gb網路卡
+--------------------------
+相機電路板 x 8
+
+USB母座連接相機的GPIO接口底部兩側3.5mm孔連接其他電路板最後接回操作主機，來同步接收快門訊號
+底部中央DC5.5mmx2.5mm插座連接12v變壓器供應電源
