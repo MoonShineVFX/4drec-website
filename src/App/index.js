@@ -10,7 +10,8 @@ import About from './About'
 import MouseIcon from './MouseIcon'
 import ScrollTopBtn from './ScrollTopBtn'
 import Footer from './Footer'
-import VideoPlayer from './VideoPlayer'
+// import VideoPlayer from './VideoPlayer'
+import Vimeoplayer from './vimeoplayer'
 import Chapter1 from './Chapter1'
 // import Chapter2 from './Chapter2'
 import Chapter2 from './Chapter-trial'
@@ -21,7 +22,7 @@ function App() {
       <Navbar />
       <About />
       <MouseIcon/>
-      <VideoPlayer/>
+      <Vimeoplayer/>
       <Chapter1 />
       <Chapter2 />
       <Chapter3 />
